@@ -90,7 +90,7 @@ exports.read = (req, res, next) => {
   const populate = referencesNames.join(' ');
 
   const all = Model.find()
-  // .populate(populate);
+    .populate(populate)
     .populate({
       path: 'comments',
       populate: { path: 'userId' },
