@@ -42,13 +42,13 @@ npm start
 | /api/questions/{id} | DELETE | id: number | -                                   | Deletes question with Id {id} |
 
 ### API COMMENTS
-| Route             | Method | Parameters | Body                                | Description                 |
-| ----------------- | :----: | ---------: | ----------------------------------- | ----------------------------|
-| /api/answers      |  GET   |          - | -                                   | Gets all answers            |
-| /api/answers      |  POST  |            | text: string, author: string        | Creates a new answer        |
-| /api/answers/{id} |  GET   | id: number | -                                   | Get answer with Id {id}     |
-| /api/answers/{id} |  PUT   | id: number | text: string, author: string        | Updates answer with Id {id} |
-| /api/answers/{id} | DELETE | id: number | -                                   | Deletes answer with Id {id} |
+| Route             | Method | Parameters | Body                                                | Description                 |
+| ----------------- | :----: | ---------: | --------------------------------------------------- | ----------------------------|
+| /api/answers      |  GET   |          - | -                                                   | Gets all answers            |
+| /api/answers      |  POST  |            | text: string, author: string, postId: string        | Creates a new answer        |
+| /api/answers/{id} |  GET   | id: number | -                                                   | Get answer with Id {id}     |
+| /api/answers/{id} |  PUT   | id: number | text: string, author: string, postId: string        | Updates answer with Id {id} |
+| /api/answers/{id} | DELETE | id: number | -                                                   | Deletes answer with Id {id} |
 
 ### API USERS
 | Route           | Method | Parameters | Body                                               | Description               |
